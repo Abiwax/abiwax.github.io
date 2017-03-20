@@ -1,0 +1,77 @@
+/*icon section*/
+.iconPdf{
+	background: url('icons/pdf.png') no-repeat;
+	width: 32px;
+	height: 32px;
+	display: inline-block !important;
+	margin-right: -3px;
+	vertical-align: middle;
+}
+.iconLogo{
+	background: url('icons/logo.jpg') no-repeat;
+	width: 100px;
+	height: 28px;
+	display: inline-block !important;
+	margin-right: -3px;
+	vertical-align: middle;
+}
+
+.iconCity{
+	background: url('icons/building.png') no-repeat;
+	width: 64px;
+	height: 64px;
+	display: block !important;
+	margin-right: 5px;
+	vertical-align: middle;
+	margin-bottom: 3px;
+
+	margin-left: 70px;
+	text-align: center;
+
+}
+.iconNeigh{
+	background: url('icons/route.png') no-repeat;
+	width: 64px;
+	height: 64px;
+	display: block !important;
+	margin-right: 5px;
+	vertical-align: middle;
+	margin-bottom: 7px;
+	margin-left: 70px;
+}
+.iconOut{
+	background: url('icons/out.png') no-repeat;	
+	width: 64px;
+	height: 64px;
+	display: block !important;
+	margin-right: 5px;
+	vertical-align: middle;
+
+	margin-left: 70px;
+	margin-bottom: 3px;
+}
+.mobile{
+	background: url('icons/menu.png') no-repeat;	
+	width: 24px;
+	height: 24px;
+	display: inline-block none;
+	margin-top: 10px;
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.mobile:hover{
+	-webkit-filter: brightness(30%);
+}
+.iconClose{
+	background: url('icons/close.png') no-repeat;	
+	width: 19px;
+	height: 19px;
+	float:right;
+	margin-right: 10px;
+	cursor: pointer;
+
+}
+.iconClose:hover{
+	-webkit-filter: brightness(50%);
+}

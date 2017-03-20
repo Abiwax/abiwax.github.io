@@ -1,0 +1,211 @@
+	<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="styles/icons/name.ico" />
+		<title>HousingSearch</title>
+		<link rel="stylesheet" type="text/css" href="styles/global.css" />
+		<link rel="stylesheet" type="text/css" href="styles/icons.css" />
+		<!--CSS-->
+		<meta name="viewport" content="width=device-width, initial-scale: 1.0, user-scalable=0"/>
+		<link rel="stylesheet" href="./styles/c3.css">
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="./js/jquery-1.12.0.min.js"></script>
+		<script src="./js/easing-1.3.min.js"></script>
+		<script src="./js/modernizr-2.5.0.min.js"></script>
+		<script src="./js/moment.min.js"></script>
+		<script src="./js/underscore.min.js"></script>
+		<script src="./js/d3.v3.min.js"></script>
+		<script src="./js/c3.js"></script>
+		<script src="./js/map3.js"></script>
+		<script src="./js/getData.js"></script>
+		<script src="./js/dataLoad.js"></script>
+		<script src="./js/pageLoad.js"></script>
+		<script src="./js/print.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+		<script src="./js/PDF.js"></script>
+
+		<!--JS-->
+	</head>
+	<body>
+		<div id="header">
+			<div class="mobile"></div>
+			<div class="logo"><span><a href="#"><div class="">HousingSearch</div></a></span></div>
+		</div>
+		<div id="container">
+			<div class="sidebar">
+				<ul id="nav">
+					<!--<li><a href="index.html"><div class="iconDash"></div><span>Comparison</span></a></li>-->
+					<li><a href="index.html" class="selected"> <div class="iconCity"></div><span>By City</span></a></li>
+					<!--<li><a href="neigh.html"><div class="iconNeigh"></div><span>By Neighborhood</span></a></li>-->
+					<li><a href="login.html"><div class="iconOut"></div><span>Log Out</span></a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="pageTitle">
+					<h3 class="titlelink"><b> HousingSearch </b>> City</h3>
+				</div>
+				<div class="contentHeader">
+					<h1>BY CITY</h1>
+				</div>
+				<div class="alert">
+
+					<div class="iconClose"></div>
+					Hi, To get an information about a state, please choose your preferred state below and a structure type and click add
+					</div>
+			<div id="box">
+				<div class="box-panel">
+
+					<div class="secondDropDown">  City
+						<select class="location" id="location">
+							
+							<option value="New York">New York</option> 
+							<option value="Los Angeles">Los Angeles</option>
+							<option value="Chicago">Chicago</option>
+							<option value="Houston">Houston</option>
+							<option value="Philadelphia">Philadelphia</option>
+							<option value="Phoenix">Phoenix</option>
+							<option value="Las Vegas">Las Vegas</option>
+							<option value="San Antonio">San Antonio</option>
+							<option value="San Diego">San Diego</option>
+							<option value="Dallas">Dallas</option>
+							<option value="San Jose">San Jose</option>
+							<option value="Jacksonville">Jacksonville</option>                   
+							<option value="San Francisco">San Francisco</option>
+							<option value="Indianapolis">Indianapolis</option>
+							<option value="Austin">Austin</option>
+							<option value="Fort Worth">Fort Worth</option>
+							<option value="Detroit">Detroit</option>
+							<option value="Columbus">Columbus</option>
+							<option value="Memphis">Memphis</option>
+							<option value="Memphis">Memphis</option>
+							<option value="Charlotte">Charlotte</option>
+							<option value="El Paso">El Paso</option>
+							<option value="Boston">Boston</option>
+							<option value="Seattle">Seattle</option>
+							<option value="Baltimore">Baltimore</option>
+							<option value="Denver">Denver</option>
+							<option value="Washington">Washington</option>
+							<option value="Nashville">Nashville</option>
+							<option value="Tucson">Tucson</option>
+							<option value="Omaha">Omaha</option>
+							<option value="Albuquerque">Albuquerque</option>
+							<option value="Sacramento">Sacramento</option>
+							<option value="Mesa">Mesa</option>
+							<option value="Long Beach">Long Beach</option>
+							<option value="Kansas City">Kansas City</option>
+							<option value="Virginia Beach">Virginia Beach</option>
+							<option value="Colorado Springs">Colorado Springs</option>
+							<option value="Virginia Beach">Virginia Beach</option>
+							<option value="Atlanta">Atlanta</option>
+
+							<option value="Miami">Miami</option>
+							<option value="Oakland">Oakland</option>
+							<option value="Honolulu">Honolulu</option>
+							<option value="Minneapolis">Minneapolis</option>
+							<option value="New Orleans">New Orleans</option>
+							<option value="Arlington">Arlington</option>
+							<option value="Raleigh">Raleigh</option>
+							<option value="Wichita">Wichita</option>
+							<option value="Tampa">Tampa</option>
+							<option value="Anaheim">Anaheim</option>
+							<option value="Aurora">Aurora</option>
+							<option value="Saint Louis">Saint Louis</option>
+							<option value="Corpus Christi">Corpus Christi</option>
+							<option value="Cincinnati">Cincinnati</option>
+
+							<option value="Riverside">Riverside</option>
+							<option value="Marietta">Marietta</option>
+							<option value="Anchorage">Anchorage</option>
+							<option value="Toledo">Toledo</option>
+							<option value="Silver Spring">Silver Spring</option>
+							<option value="Lexington">Lexington</option>
+							<option value="Newark">Newark</option>
+							<option value="Tallahassee">Tallahassee</option>
+							<option value="Plano">Plano</option>
+							<option value="Chandler">Chandler</option>
+							<option value="Louisville">Louisville</option>
+							<option value="Chandler">Chandler</option>
+							<option value="Louisville">Louisville</option>
+							<option value="Henderson">Henderson</option>
+							<option value="Jersey City">Jersey City</option>
+							<option value="Lubbock">Lubbock</option>
+							<option value="Orlando">Orlando</option>
+							<option value="Norfolk">Norfolk</option>
+							<option value="Saint Petersburg">Saint Petersburg</option>
+							<option value="Pensacola">Pensacola</option>
+							<option value="Greensboro">Greensboro</option>
+							<option value="Lincoln">Lincoln</option>
+							<option value="Corona">Corona</option>
+							<option value="Chesapeake">Chesapeake</option>
+							<option value="Garland">Garland</option>
+							<option value="Fort Myers">Fort Myers</option>
+							<option value="Chesapeake">Chesapeake</option>
+							<option value="Garland">Garland</option>
+							<option value="Knoxvilles">Knoxvilles</option>
+							<option value="Lawrenceville">Lawrenceville</option>
+							<option value="Fremont">Fremont</option>
+							<option value="Fayetteville">Fayetteville</option>
+							<option value="Springfield">Springfield</option>
+							<option value="Arlington">Arlington</option>
+							<option value="Rochester">Rochester</option>
+							<option value="Irvine">Irvine</option>
+							<option value="Scottsdale">Scottsdale</option>
+							<option value="Rochester">Rochester</option>
+							<option value="Winston-Salem">Winston-Salem</option>
+							<option value="Richmond">Richmond</option>
+							<option value="Boca Raton">Boca Raton</option>
+							<option value="Oxnard">Oxnard</option>
+							<option value="Bradenton">Bradenton</option>
+							<option value="Montgomery">Montgomery</option>
+							<option value="Santa Rosa">Santa Rosa</option>
+							<option value="Des Moines">Des Moines</option>
+							<option value="Reno">Reno</option>
+							<option value="Spokane">Spokane</option>
+							<option value="Augusta">Augusta</option>
+							<option value="Tacoma">Tacoma</option>
+							<option value="Oceanside">Oceanside</option>
+							<option value="Gainesville">Gainesville</option>
+							<option value="Woodbridge">Woodbridge</option>
+							<option value="Ocala">Ocala</option>
+							<option value="Glendale">Glendale</option>
+							<option value="Boise">Boise</option>
+						</select>
+					</div>
+
+					<div class="secondDropDown">  Structure
+						<select class="structure" id="structure">
+							
+							<option value="1Bedroom">1 Bedroom</option>
+							<option value="2Bedroom">2 Bedroom</option>
+							<option value="3Bedroom">3 Bedroom</option>
+							<option value="4Bedroom">4 Bedroom</option>
+							<option value="5Bedroom">5 Bedroom</option>
+							<option value="AllHomes">All Homes</option>
+							<option value="Condo">Condo</option>
+							<option value="DuplexTriplex">Duplex Triplex</option>
+							<option value="Mfr5Plus">Multifamily 5+</option>
+							<option value="Sfr">SFR, Condo</option>
+							<option value="Studio">Studio</option>
+							
+					</select>
+					</div>
+					<div class="confirm">
+						<button class="add_data" onclick="getAll()">Add</button>
+					</div>
+					<div class="others">
+						<div class="iconPdf"></div>
+						<button class="add_data" id="del_data"  onClick="printData('printSection')">Print</button>
+						<button class="add_data" id="del_data"  onClick="printPDF()">PDF</button>
+						<button class="add_data" id="dow_data"  onclick="deleteData()">Reset Page</button>
+					</div>
+                </div>
+                    <div class="alertRed"></div>
+					<div id="printSection">
+					<div class="chartSection" id="chartSection"> </div>
+					<div class="mapSection" id="mapSection" ></div></div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

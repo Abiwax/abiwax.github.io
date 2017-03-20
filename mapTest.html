@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps JavaScript API v3 Example: Geocoding Simple</title>
+
+    <link rel="stylesheet" href="./styles/c3.css">
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="./js/jquery-1.12.0.min.js"></script>
+    <script src="./js/easing-1.3.min.js"></script>
+    <script src="./js/modernizr-2.5.0.min.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/underscore.min.js"></script>
+    <script src="./js/d3.v3.min.js"></script>
+    <script src="./js/c3.js"></script>
+    <script src="./js/map3.js"></script>
+    <script src="./js/getData.js"></script>
+    <script src="./js/dataLoad.js"></script>
+    <script src="./js/pageLoad.js"></script>
+</head>
+<body style="margin-left:10px; padding:0px;" >
+<br><br>
+<button id="del_data"  onclick="deleteData()">Delete</button>
+<div class="alert"></div>
+<br><br>
+<select class="location" id="location">
+ <option>Phoenix</option>
+ <option>San Jose</option>
+</select>
+<select class="structure" id="structure">
+ <option value="1Bedroom">1 Bedroom</option>
+ <option value="2Bedroom">2 Bedroom</option>
+</select>
+<button id="add_data" onclick="getAll()">Add</button>
+<br><br>
+ <!--<div id="mapSection" style="width:1000; height:450"></div>-->
+     <div class="chartSection" id="chartSection"> </div>
+<div id="mapSection" style="width:90%;padding: 20px;height: 350px;"> </div>
+</body>
+</html>
